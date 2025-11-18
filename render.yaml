@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: sgg-n8n
+    env: docker
+    repo: https://github.com/alexmam80/n8n-render
+    branch: main
+    autoDeploy: true
+    
+    disk:
+      name: n8n-data
+      mountPath: /home/node/.n8n
+      sizeGB: 1
+
+    envVars:
+      - key: N8N_HOST
+        value: sgg-n8n.onrender.com
+      - key: N8N_PORT
+        value: 5678
+      - key: N8N_PROTOCOL
+        value: https
+      - key: NODE_ENV
+        value: production
+      - key: TZ
+        value: Europe/Chisinau
