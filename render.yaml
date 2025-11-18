@@ -36,3 +36,5 @@ services:
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
         value: Tineretei60!
+      - key: N8N_EDITOR_BASE_URL
+        value: https://sgg-n8n-render.onrender.com/
