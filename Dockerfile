@@ -7,5 +7,3 @@ ENV NODE_ENV=${NODE_ENV}
 ENV TZ=${TZ}
 
 EXPOSE 5678
-
-CMD ["n8n"]
